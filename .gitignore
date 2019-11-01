@@ -28,4 +28,4 @@ nbdist/
 .nb-gradle/
 
 ### properties ###
-.properties
+*.properties

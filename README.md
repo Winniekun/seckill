@@ -4,5 +4,7 @@
 |包| 功能|
 |:----:|:----:|
 |entity|数据库表对应的实体类|
-|dao|具体的实体的接口实现|
- 
+|dao|data access object|
+|service|实现service接口和实现类|
+|exception|service接口所需要的一些异常|
+|dto|用于web层和service层进行数据的传输|
