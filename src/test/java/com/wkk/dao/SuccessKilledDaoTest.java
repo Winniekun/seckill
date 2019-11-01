@@ -3,6 +3,8 @@ package com.wkk.dao;
 import com.wkk.entity.SuccessKilled;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -20,7 +22,6 @@ import static org.junit.Assert.*;
 // 告诉junit spring 配置文件
 @ContextConfiguration({ "classpath:spring/spring-dao.xml" })
 public class SuccessKilledDaoTest {
-
     @Resource
     private SuccessKilledDao successKilledDao;
 
