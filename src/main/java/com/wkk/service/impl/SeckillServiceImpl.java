@@ -54,6 +54,16 @@ public class SeckillServiceImpl implements SeckillService {
 
     @Override
     public Exposer exportSeckillUrl(long seckillId) {
+        // redis缓存， 减低数据库压力
+        // 优化点： 缓存优化
+        /*
+        * get from cache
+        * if null
+        *   get db
+        * else
+        *   put cache
+        * locgoin
+         */
         Seckill seckill = seckillDao.queryById(seckillId);
         if (seckill == null) {
             return new Exposer(false, seckillId);
