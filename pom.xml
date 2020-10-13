@@ -24,7 +24,7 @@
       <!--使用4.x因为其是使用注解的方式使用  3.x为使用编程的方式-->
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
 
